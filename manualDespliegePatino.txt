@@ -1,0 +1,44 @@
+Requisitos del sistema
+Para instalar el proyecto localmente, se necesita:
+•	PHP > 8.1
+•	Composer
+•	Laravel 12
+•	MySQL 
+•	Servidor web (Apache y mysql) (xampp)
+•	Git (opcional para clonar el repositorio)
+
+1. Clonar el repositorio
+Si se desea trabajar con control de versiones, clonar el proyecto desde Git:
+•	git clone https://github.com/usuario/proyectoTFG-Borja-Patino.git
+•	cd proyectoTFG-Borja-Patino
+
+2. Instalar dependencias
+Instalar las dependencias de Laravel con Composer:
+composer install
+npm run dev
+
+
+
+3. Configurar variables de entorno
+Editar las siguientes variables:
+APP_NAME="Deplatec Informática"
+APP_URL=http://localhost
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=productostfg
+DB_USERNAME=root
+DB_PASSWORD=
+
+4. Crear y migrar la base de datos
+Crear la base de datos con el nombre definido en .env (por ejemplo, productostfg) y ejecutar las migraciones 
+o si lo desea importar la base de datos proporcionada:
+php artisan migrate
+
+5. Iniciar el servidor local
+php artisan serve
+La aplicación estará disponible en http://localhost:8000
+
+6. Crear usuarios admin y cliente
+Puedes registrar usuarios desde la propia web o crearlos manualmente desde localhost/phpmyadmin.
+Para acceder con usuario administrador, crear usuario y cambiar rol en base de datos.
